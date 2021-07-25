@@ -1,10 +1,29 @@
-// generic types
+// condicionais a partir de parametros
 
-function adicionaApendiceLista<T>(array: T[], valor: T) {
-    return array.map(() => valor);
+interface IUsuario {
+  id: string;
+  email: string;
 }
 
-adicionaApendiceLista([1,2,3], 4);
+interface IAdmin extends IUsuario {
+  cargo: "gerente" | "coordenador" | "supervisor";
+}
+
+function redirecione(usuario: IUsuario | IAdmin) {
+  if ("cargo" in usuario) {
+    //administração
+  }
+
+  //usuario
+}
+
+// generic types
+
+// function adicionaApendiceLista<T>(array: T[], valor: T) {
+//     return array.map(() => valor);
+// }
+
+// adicionaApendiceLista([1,2,3], 4);
 
 //types
 
