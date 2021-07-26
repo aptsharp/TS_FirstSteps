@@ -1,20 +1,18 @@
+// utilizando ? para variaveis opconais
 
-// utilizando ? para variaveis opconais 
-
-interface IUsuario{
-    id: string;
-    email: string;
-    cargo?: 'gerente' | 'coordenador' | 'supervisor' | 'funcionario';
+interface IUsuario {
+  id: string;
+  email: string;
+  cargo?: "gerente" | "coordenador" | "supervisor" | "funcionario";
 }
 
-function redirecione(usuario: IUsuario){
-    if (usuario.cargo){
-        //redirecione para cargo
-    }
+function redirecione(usuario: IUsuario) {
+  if (usuario.cargo) {
+    //redirecione para cargo
+  }
 
-    // redirecione para area
+  // redirecione para area
 }
-
 
 // condicionais a partir de parametros
 
